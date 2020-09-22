@@ -1,0 +1,137 @@
+package com.prograd.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Books  {
+	
+	@Id
+	@Column
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int id;
+	
+	@Column
+	private String bookName;
+	
+	@Column
+	private String bookDescription;
+	
+	@Column
+	private int bookPrice;
+	
+	@Column
+	private String bookCategory;
+	
+	@Column
+	private int bookQuantity;
+	
+	@Column
+	private String bookLocation;
+	
+	
+	public Books() {
+		
+	}
+
+	
+
+	public Books(int id, String bookName, String bookDescription, int bookPrice, String bookCategory, int bookQuantity,
+			String bookLocation) {
+		super();
+		this.id = id;
+		this.bookName = bookName;
+		this.bookDescription = bookDescription;
+		this.bookPrice = bookPrice;
+		this.bookCategory = bookCategory;
+		this.bookQuantity = bookQuantity;
+		this.bookLocation = bookLocation;
+	}
+
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getBookName() {
+		return bookName;
+	}
+
+
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
+	}
+
+
+	public String getBookDescription() {
+		return bookDescription;
+	}
+
+
+	public void setBookDescription(String bookDescription) {
+		this.bookDescription = bookDescription;
+	}
+
+
+	public int getBookPrice() {
+		return bookPrice;
+	}
+
+
+	public void setBookPrice(int bookPrice) {
+		this.bookPrice = bookPrice;
+	}
+
+
+	public String getBookCategory() {
+		return bookCategory;
+	}
+
+
+	public void setBookCategory(String bookCategory) {
+		this.bookCategory = bookCategory;
+	}
+
+
+	public int getBookQuantity() {
+		return bookQuantity;
+	}
+
+
+	public void setBookQuantity(int bookQuantity) {
+		this.bookQuantity = bookQuantity;
+	}
+
+
+
+
+
+	public String getBookLocation() {
+		return bookLocation;
+	}
+
+
+
+
+
+	public void setBookLocation(String bookLocation) {
+		this.bookLocation = bookLocation;
+	}
+
+
+	
+	
+	
+}
+
+	
