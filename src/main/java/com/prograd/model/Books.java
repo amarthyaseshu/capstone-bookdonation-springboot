@@ -18,6 +18,12 @@ public class Books  {
 	private String bookName;
 	
 	@Column
+	private String bookAuthor;
+	
+	@Column
+	private String bookEdition;
+	
+	@Column
 	private String bookDescription;
 	
 	@Column
@@ -30,26 +36,38 @@ public class Books  {
 	private int bookQuantity;
 	
 	@Column
-	private String bookLocation;
+	private String bookQualityRating;
+	
+	@Column
+	private String bookContentRating;
 	
 	
 	public Books() {
 		
 	}
 
+
 	
 
-	public Books(int id, String bookName, String bookDescription, int bookPrice, String bookCategory, int bookQuantity,
-			String bookLocation) {
+
+
+	public Books(int id, String bookName, String bookAuthor, String bookEdition, String bookDescription, int bookPrice,
+			String bookCategory, int bookQuantity, String bookQualityRating, String bookContentRating) {
 		super();
 		this.id = id;
 		this.bookName = bookName;
+		this.bookAuthor = bookAuthor;
+		this.bookEdition = bookEdition;
 		this.bookDescription = bookDescription;
 		this.bookPrice = bookPrice;
 		this.bookCategory = bookCategory;
 		this.bookQuantity = bookQuantity;
-		this.bookLocation = bookLocation;
+		this.bookQualityRating = bookQualityRating;
+		this.bookContentRating = bookContentRating;
 	}
+
+
+
 
 
 
@@ -71,6 +89,44 @@ public class Books  {
 	public void setBookName(String bookName) {
 		this.bookName = bookName;
 	}
+	
+	
+
+
+	public String getBookAuthor() {
+		return bookAuthor;
+	}
+
+
+
+
+
+
+	public void setBookAuthor(String bookAuthor) {
+		this.bookAuthor = bookAuthor;
+	}
+
+
+
+
+
+
+	public String getBookEdition() {
+		return bookEdition;
+	}
+
+
+
+
+
+
+	public void setBookEdition(String bookEdition) {
+		this.bookEdition = bookEdition;
+	}
+
+
+
+
 
 
 	public String getBookDescription() {
@@ -113,24 +169,24 @@ public class Books  {
 	}
 
 
-
-
-
-	public String getBookLocation() {
-		return bookLocation;
+	public String getBookQualityRating() {
+		return bookQualityRating;
 	}
 
 
-
-
-
-	public void setBookLocation(String bookLocation) {
-		this.bookLocation = bookLocation;
+	public void setBookQualityRating(String bookQualityRating) {
+		this.bookQualityRating = bookQualityRating;
 	}
 
 
-	
-	
+	public String getBookContentRating() {
+		return bookContentRating;
+	}
+
+
+	public void setBookContentRating(String bookContentRating) {
+		this.bookContentRating = bookContentRating;
+	}
 	
 }
 

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.prograd.model.Books;
 import com.prograd.service.BooksService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+
 @RestController
 public class BooksController {
 	
@@ -24,7 +24,7 @@ public class BooksController {
 	private BooksService booksService;
 	
 	// for adding books
-	
+	@CrossOrigin(origins = "http://localhost:4200")
 	@PostMapping("/addbooks")
 	public Books addBooks(@RequestBody Books books){
 		
@@ -35,6 +35,7 @@ public class BooksController {
 	// for viewing all books
 	
 //	@RequestMapping(path="/getbookslist",method=RequestMethod.GET)
+	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping("/getbookslist")
 	public List<Books> fetchBooksList(){
 		List<Books> books=new ArrayList<Books>();
@@ -43,7 +44,7 @@ public class BooksController {
 	}
 	
 	// for getting books by id
-	
+	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping("/getbooksbyid/{id}")
 	public Optional<Books> fetchBooksById(@PathVariable int id){
 		
@@ -52,7 +53,7 @@ public class BooksController {
 	}
 	
 	// for deleting books by id
-	
+	@CrossOrigin(origins = "http://localhost:4200")
 		@DeleteMapping("/deletebooksbyid/{id}")
 		public String deleteBooksById(@PathVariable int id){
 			
