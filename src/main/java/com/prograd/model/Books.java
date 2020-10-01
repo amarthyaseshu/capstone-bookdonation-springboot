@@ -41,18 +41,21 @@ public class Books  {
 	@Column
 	private String bookContentRating;
 	
+	@Column
+	private String bookPickupDetails;
+	
+	@Column
+	private String bookImageUrl;
+	
 	
 	public Books() {
 		
 	}
 
 
-	
-
-
-
 	public Books(int id, String bookName, String bookAuthor, String bookEdition, String bookDescription, int bookPrice,
-			String bookCategory, int bookQuantity, String bookQualityRating, String bookContentRating) {
+			String bookCategory, int bookQuantity, String bookQualityRating, String bookContentRating,
+			String bookPickupDetails, String bookImageUrl) {
 		super();
 		this.id = id;
 		this.bookName = bookName;
@@ -64,10 +67,9 @@ public class Books  {
 		this.bookQuantity = bookQuantity;
 		this.bookQualityRating = bookQualityRating;
 		this.bookContentRating = bookContentRating;
+		this.bookPickupDetails = bookPickupDetails;
+		this.bookImageUrl = bookImageUrl;
 	}
-
-
-
 
 
 
@@ -90,15 +92,11 @@ public class Books  {
 		this.bookName = bookName;
 	}
 	
-	
 
 
 	public String getBookAuthor() {
 		return bookAuthor;
 	}
-
-
-
 
 
 
@@ -108,24 +106,15 @@ public class Books  {
 
 
 
-
-
-
 	public String getBookEdition() {
 		return bookEdition;
 	}
 
 
 
-
-
-
 	public void setBookEdition(String bookEdition) {
 		this.bookEdition = bookEdition;
 	}
-
-
-
 
 
 
@@ -187,6 +176,27 @@ public class Books  {
 	public void setBookContentRating(String bookContentRating) {
 		this.bookContentRating = bookContentRating;
 	}
+
+
+	public String getBookPickupDetails() {
+		return bookPickupDetails;
+	}
+
+
+	public void setBookPickupDetails(String bookPickupDetails) {
+		this.bookPickupDetails = bookPickupDetails;
+	}
+
+
+	public String getBookImageUrl() {
+		return bookImageUrl;
+	}
+
+
+	public void setBookImageUrl(String bookImageUrl) {
+		this.bookImageUrl = bookImageUrl;
+	}
+
 	
 }
 

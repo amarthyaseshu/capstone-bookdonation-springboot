@@ -56,25 +56,5 @@ public class RegistrationController {
 	}
 	
 	
-	// for getting user by email
-	
-//		@GetMapping("/getuserbyemail/{userMail}")
-//		public User fetchBooksByUserMail(@PathVariable String userMail){
-//			
-//			return	service.fetchUserByEmailId(userMail);
-//			
-//		}
-		
-		
-		
-		// for getting user by email and password
-		
-//			@GetMapping("/getuserbyemailandpass/{userMail}&{userPassword}")
-//			public User fetchUserByEmailIdAndPassword(@PathVariable String userMail,@PathVariable String userPassword){
-//				
-//				return	service.fetchUserByEmailIdAndPassword(userMail, userPassword);
-//				
-//			}
-	
 
 }

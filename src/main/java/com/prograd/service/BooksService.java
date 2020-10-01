@@ -28,7 +28,6 @@ public class BooksService {
 		return bookrepo.findById(id);
 	}
 	
-
 	
 	public String deleteBooksById(int id){
 		
@@ -43,8 +42,6 @@ public class BooksService {
 		}
 		return result;
 	
-	}
-	
-	
+	}	
 	
 }
